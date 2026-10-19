@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
 
+            // The first-kevek tasks //
+
             // Task 1
             var name = "Ivan";
             int age = 20;
@@ -34,6 +36,28 @@
             string city = "Lublin";
 
             Console.WriteLine($"\nMy name is {name}, I am {age} years old and I live in {city}.");
+
+
+            // The second-kevek tasks //
+
+            // Task 5
+            double TemperatureConverter(double c)
+            {
+                return c * 9 / 5 + 32;
+            }
+
+            Console.Write("\n\t Enter the temperature in Celsius: ");
+
+            if (!double.TryParse(Console.ReadLine(), out double celsius))
+            {
+                Console.Write("\tYou have entered an incorrect value");
+            }
+            else
+            {
+                Console.WriteLine($"\t Your temperature in Fahrenheit: {TemperatureConverter(celsius)}");
+            }
+
+
         }
     }
 }
