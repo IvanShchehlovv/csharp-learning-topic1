@@ -46,18 +46,54 @@
                 return c * 9 / 5 + 32;
             }
 
-            Console.Write("\n\t Enter the temperature in Celsius: ");
+            Console.Write("\n\tEnter the temperature in Celsius: ");
 
             if (!double.TryParse(Console.ReadLine(), out double celsius))
             {
-                Console.Write("\tYou have entered an incorrect value");
+                Console.WriteLine("\tYou have entered an incorrect value");
             }
             else
             {
-                Console.WriteLine($"\t Your temperature in Fahrenheit: {TemperatureConverter(celsius)}");
+                Console.WriteLine($"\tYour temperature in Fahrenheit: {TemperatureConverter(celsius)}");
+            }
+
+            // Task 6
+
+            Console.Write("\n\tPlease enter your age: ");
+            if (int.TryParse(Console.ReadLine(), out int userAge))
+            {
+                Console.WriteLine($"\tYou are {userAge} years old  ^^");
+            }
+            else
+            {
+                Console.WriteLine("\tInvalid age");
             }
 
 
+            // Task 7
+
+            Console.Write("\n\tPlease enter your hourly rate: ");
+            if (decimal.TryParse(Console.ReadLine(), out decimal hourlyRate))
+            {
+                Console.Write("\tPlease enter the number of hours worked: ");
+                if (decimal.TryParse(Console.ReadLine(), out decimal hoursWorked))
+                {
+                    Console.WriteLine($"\tYour salary = {hourlyRate * hoursWorked}   >:) ");
+                }
+                else
+                {
+                    Console.WriteLine("\tInvalid number");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\tInvalid number");
+            }
+
+
+
+
+            
         }
     }
 }
