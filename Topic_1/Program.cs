@@ -99,6 +99,26 @@ namespace Topic_1
                 $"\n\t\t Averega grade: {studentAverageGrade}" +
                 $"\n\t\t -----------------");
 
+
+
+            //           Level 4 ///////////////
+
+
+            // Task 11
+
+            a = 10;
+            b = 3;
+
+            double result = a / b;
+
+            Console.WriteLine($"\n\n\t\t\t{result}");
+            
+            // Task 12
+
+            double number = 10.99;
+            result = (int)number;
+
+            Console.WriteLine($"\n\n\t\t\t{result}");
         }
     }
 }
